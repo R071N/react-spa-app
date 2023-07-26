@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#main {
+  margin: 0 auto;
+  max-width: 1077px;
+}
+
+/* Search */
+.search {
+  margin-top: 23px;
+  position: relative;
+  max-width: 60%;
+}
+
+.search__input {
+  padding: 17px 26px;
+  width: 100%;
+  height: 52px;
+  background: #5A5C66;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.687%;
+}
+
+.search__input::placeholder {
+  color: #B2B7BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.687%;
+}
+
+.search__svg {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* Main/Post */
+.post__list {
+  margin-top: 15px;
+}
+
+.post__list__header,
+.post__item {
+  display: grid;
+  grid-template-columns: 110px auto 432px;
+  align-items: center;
+}
+
+.post__list__header {
+  padding-top: 19px;
+  padding-bottom: 16px;
+  background: #474955;
+  box-shadow: 0px 4px 27px 0px rgba(230, 231, 234, 0.78);
+}
+
+.post__list__header div {
+  padding-left: 20%;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.687%;
+}
+
+.post__list__header svg {
+  margin-left: 30px;
+}
+
+.post__item {
+  margin-top: -1px;
+  border: 1px solid #E3E6EC;
+  color: #474955;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.687%;
+}
+
+.post__item__id {
+  justify-self: center;
+}
+
+.post__item__title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-left: 1px solid #E3E6EC;
+  border-right: 1px solid #E3E6EC;
+  padding-left: 8px;
+}
+
+.post__item__body {
+  padding: 15px 11px;
+}
+
+/* Pagination */
+.pagination {
+  padding: 15px 41px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__numbers {
+  display: flex;
+  gap: 10px;
+  color: #474955;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 137.687%;
+  align-items: flex-end;
+}
+
+.pagination__numbers div.active {
+  color: #7EBC3C;
+}
+
+.pagination__prev-page,
+.pagination__next-page {
+  color: #474955;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.687%;
+}
